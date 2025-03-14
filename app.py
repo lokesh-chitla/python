@@ -4,13 +4,7 @@ import zipfile
 import streamlit as st
 import pandas as pd
 import numpy as np
-import faiss
-import re
-from io import StringIO
-from kaggle.api.kaggle_api_extended import KaggleApi
-from sentence_transformers import SentenceTransformer
-from rank_bm25 import BM25Okapi
-from transformers import pipeline
+
 
 # Ensure FAISS is installed
 try:
@@ -18,6 +12,14 @@ try:
 except ImportError:
     os.system('pip install faiss-cpu')
     import faiss
+
+import re
+from io import StringIO
+from kaggle.api.kaggle_api_extended import KaggleApi
+from sentence_transformers import SentenceTransformer
+from rank_bm25 import BM25Okapi
+from transformers import pipeline
+
     
 KAGGLE_USERNAME = "chitlalokeshkumar"
 KAGGLE_KEY = "e8017c7cd0205e2fc459cce3b7d1bbb2"
