@@ -12,6 +12,13 @@ from sentence_transformers import SentenceTransformer
 from rank_bm25 import BM25Okapi
 from transformers import pipeline
 
+# Ensure FAISS is installed
+try:
+    import faiss
+except ImportError:
+    os.system('pip install faiss-cpu')
+    import faiss
+    
 KAGGLE_USERNAME = "chitlalokeshkumar"
 KAGGLE_KEY = "e8017c7cd0205e2fc459cce3b7d1bbb2"
 
