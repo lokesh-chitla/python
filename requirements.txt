@@ -1,0 +1,6 @@
+kaggle
+faiss-cpu
+rank-bm25
+sentence-transformers
+transformers
+streamlit
